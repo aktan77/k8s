@@ -1,4 +1,4 @@
-FROM python:3.9-alpine
+FROM python:3.6-alpine
 
 WORKDIR /app
 
@@ -7,4 +7,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD [ "python3", "-u", "app.py" ]
+CMD [ "python3", "-u", "flask_app.py" ]

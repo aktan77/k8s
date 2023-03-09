@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/health')
 def health():
-    return 'Hello from Your_Name'
+    return 'Hello from Aktan'
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
