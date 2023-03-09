@@ -1,0 +1,20 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast
+provisioner: kubernetes.io/gce-pd
+parameters:
+    type: pd-ssd
+    replication-type: none
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata: 
+  name: mypvc-fast
+spec:
+  accessModes: 
+    - ReadWriteOnce
+  resources:  
+    requests: 
+      storage: 1000Mi
+  storageClassName: fast

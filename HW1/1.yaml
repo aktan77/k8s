@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: nginx-aktan
+spec:
+  containers:
+    - name: nginx-aktan
+      image: nginx
+      ports:
+        - containerPort: 80
