@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: aktan55/app:latest
+        image: aktan55/aku:latest
         resources:
           limits:
             memory: "128Mi"
